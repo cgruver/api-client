@@ -22,7 +22,7 @@ public class ClientApp {
     @ConfigProperty(name = "api-server.url")
     private String url;
     
-    @Scheduled(every = "5s")
+    @Scheduled(every = "{api-server.schedule}")
     public void sendMessage() {
 
         LOG.info("Scheduler Fired");
