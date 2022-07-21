@@ -9,7 +9,7 @@ import javax.ws.rs.core.Response;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.eclipse.microprofile.rest.client.RestClientBuilder;
 import org.jboss.logging.Logger;
-import org.labmonkeys.apiclient.api.ClientApi;
+import org.labmonkeys.apiclient.colaborators.ClientApi;
 import org.labmonkeys.apiclient.dto.MessageDto;
 
 import io.quarkus.scheduler.Scheduled;
