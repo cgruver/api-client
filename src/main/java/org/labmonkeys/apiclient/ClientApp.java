@@ -26,9 +26,7 @@ public class ClientApp {
     public void sendMessage() {
 
         LOG.info("Scheduler Fired");
-        MessageDto message = new MessageDto();
-        message.setMessageId(UUID.randomUUID());
-        message.setMessage("Hello There");
+        MessageDto message = new MessageDto(UUID.randomUUID(), "Hello There");
         LOG.info("Sending message: " + message);
         ClientApi api = RestClientBuilder.newBuilder().baseUri(URI.create(this.url)).build(ClientApi.class);
         try {

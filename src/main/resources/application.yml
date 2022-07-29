@@ -2,7 +2,7 @@ quarkus:
   application:
     name: apiClient
   http:
-    port: 4090
+    port: ${CLIENT_PORT}
   log:
     level: "INFO"
     console:
